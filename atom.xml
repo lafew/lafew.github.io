@@ -40,7 +40,7 @@
     <link href="http://example.com/2021/11/22/%E9%98%B5%E5%88%97%E6%B2%BF%E6%9B%B2%E7%BA%BF%E6%8E%92%E5%88%97/"/>
     <id>http://example.com/2021/11/22/%E9%98%B5%E5%88%97%E6%B2%BF%E6%9B%B2%E7%BA%BF%E6%8E%92%E5%88%97/</id>
     <published>2021-11-22T07:37:57.000Z</published>
-    <updated>2021-11-22T07:59:16.768Z</updated>
+    <updated>2021-11-22T11:43:15.427Z</updated>
     
     <content type="html"><![CDATA[<h1 id="阵列跟随曲线"><a href="#阵列跟随曲线" class="headerlink" title="阵列跟随曲线"></a>阵列跟随曲线</h1><p>创建一个曲线，在编辑模式下进行放大</p><p>回到有阵列修改器的物体上，再为其添加一个曲线修改器，吸取刚刚创建的曲线</p><p>阵列就会沿着曲线进行排列</p><p><img src="https://cdn.jsdelivr.net/gh/lafew/picgo_xyz@main//img/image-20211122154421872.png" alt="image-20211122154421872"></p><p>如果阵列的边界超出了曲线的端点，找到曲线属性打开边界钳制</p><p><img src="https://cdn.jsdelivr.net/gh/lafew/picgo_xyz@main//img/image-20211122154616189.png" alt="image-20211122154616189"></p><hr><p>一般情况下阵列沿曲线会产生变形，如果想要物体不变性，则需先创建一个平面阵列沿所需曲线排列，然后将物体与平面绑定父子子关系，在平面属性中找到实例化，选择面就ok了</p><p>本质是物体从平面的面心生出，只要面不发生翻转，就不会产生变形</p>]]></content>
     
