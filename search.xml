@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search> 
+  
+  
+    
+    <entry>
+      <title>倒角修改器解析</title>
+      <link href="/2021/11/22/%E5%80%92%E8%A7%92%E4%BF%AE%E6%94%B9%E5%99%A8%E5%85%A8%E8%A7%A3%E6%9E%90/"/>
+      <url>/2021/11/22/%E5%80%92%E8%A7%92%E4%BF%AE%E6%94%B9%E5%99%A8%E5%85%A8%E8%A7%A3%E6%9E%90/</url>
+      
+        <content type="html"><![CDATA[<h1 id="对倒角进行限制"><a href="#对倒角进行限制" class="headerlink" title="对倒角进行限制"></a>对倒角进行限制</h1><p>角度、权重、顶点组</p><h2 id="权重"><a href="#权重" class="headerlink" title="权重"></a>权重</h2><p>分为边线权重和顶点权重</p><p>顶点倒角权重</p><p>数值为0，则倒角修改器完全不起作用，为1，则百分之百进行倒角，如果对顶点进行多选就会显示平均倒角权重</p><p>平均倒角权重数值调到0是再往回调节，就会以一个均值的方式进行倒角</p><h2 id="顶点组"><a href="#顶点组" class="headerlink" title="顶点组"></a>顶点组</h2><p>默认情况下会使用全部顶点进行倒角</p><p>选中一个顶点指定为群组，在顶点权重中调节群组权重</p><p><img src="https://cdn.jsdelivr.net/gh/lafew/picgo_xyz@main//img/image-20211122163053711.png" alt="image-20211122163053711"></p><h2 id="轮廓"><a href="#轮廓" class="headerlink" title="轮廓"></a>轮廓</h2><h3 id="超椭圆"><a href="#超椭圆" class="headerlink" title="超椭圆"></a>超椭圆</h3><p>形状调节，往左向内凹，往右向外凸（一般以0.25的值进行调节）</p><h3 id="自定义"><a href="#自定义" class="headerlink" title="自定义"></a>自定义</h3><p><img src="https://cdn.jsdelivr.net/gh/lafew/picgo_xyz@main//img/image-20211122164118482.png" alt="image-20211122164118482"></p><h2 id="几何数据"><a href="#几何数据" class="headerlink" title="几何数据"></a>几何数据</h2><p>外斜接：一个有倒角的边连接到一个没有倒角的边</p><p>剩下的不记也罢😭😭😭</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> blender </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>阵列沿曲线排列</title>
+      <link href="/2021/11/22/%E9%98%B5%E5%88%97%E6%B2%BF%E6%9B%B2%E7%BA%BF%E6%8E%92%E5%88%97/"/>
+      <url>/2021/11/22/%E9%98%B5%E5%88%97%E6%B2%BF%E6%9B%B2%E7%BA%BF%E6%8E%92%E5%88%97/</url>
+      
+        <content type="html"><![CDATA[<h1 id="阵列跟随曲线"><a href="#阵列跟随曲线" class="headerlink" title="阵列跟随曲线"></a>阵列跟随曲线</h1><p>创建一个曲线，在编辑模式下进行放大</p><p>回到有阵列修改器的物体上，再为其添加一个曲线修改器，吸取刚刚创建的曲线</p><p>阵列就会沿着曲线进行排列</p><p><img src="https://cdn.jsdelivr.net/gh/lafew/picgo_xyz@main//img/image-20211122154421872.png" alt="image-20211122154421872"></p><p>如果阵列的边界超出了曲线的端点，找到曲线属性打开边界钳制</p><p><img src="https://cdn.jsdelivr.net/gh/lafew/picgo_xyz@main//img/image-20211122154616189.png" alt="image-20211122154616189"></p><hr><p>一般情况下阵列沿曲线会产生变形，如果想要物体不变性，则需先创建一个平面阵列沿所需曲线排列，然后将物体与平面绑定父子子关系，在平面属性中找到实例化，选择面就ok了</p><p>本质是物体从平面的面心生出，只要面不发生翻转，就不会产生变形</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> blender </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>从阵列研究延申实例化探索</title>
+      <link href="/2021/11/22/%E4%BB%8E%E9%98%B5%E5%88%97%E7%A0%94%E7%A9%B6%E5%BB%B6%E7%94%B3%E5%AE%9E%E4%BE%8B%E5%8C%96%E6%8E%A2%E7%B4%A2/"/>
+      <url>/2021/11/22/%E4%BB%8E%E9%98%B5%E5%88%97%E7%A0%94%E7%A9%B6%E5%BB%B6%E7%94%B3%E5%AE%9E%E4%BE%8B%E5%8C%96%E6%8E%A2%E7%B4%A2/</url>
+      
+        <content type="html"><![CDATA[<h1 id="实例化"><a href="#实例化" class="headerlink" title="实例化"></a>实例化</h1><p>在物体模式下shift+a，最下方集合实例，选择所需要实例化的集合，集合下所有的物体都会被看作集合的引用</p><p><img src="https://cdn.jsdelivr.net/gh/lafew/picgo_xyz@main//img/image-20211122145643181.png" alt="image-20211122145643181"></p><p>实例所使用的数据都是原生集合的数据，因此复制的时候，内存不会产生较大的波动，相比之下直接复制则要占用更多的内存。</p><p>实例化所使用的数据都基于原始物体，因此改变原始物体，实例化物体也会跟着一起改变</p><p>想要实例物体独立，就在物体模式下ctrl+a，选择实例独立化</p><p><img src="https://cdn.jsdelivr.net/gh/lafew/picgo_xyz@main//img/image-20211122150253954.png" alt="image-20211122150253954"></p><p>独立化完成后，空物体就不能直接控制，注意独立化后把空物体删掉。</p><p>独立后物体的数据实际上还处于一种关联的状态，会出现共用数据的一个标志</p><p><img src="https://cdn.jsdelivr.net/gh/lafew/picgo_xyz@main//img/image-20211122150533784.png" alt="image-20211122150533784"></p><p>如果数据也要独立</p><p>找到物体-关系-使其独立化-物体和数据和材质</p><p>按alt可以同时操作多个物体</p><p><img src="https://cdn.jsdelivr.net/gh/lafew/picgo_xyz@main//img/image-20211122150806469.png" alt="image-20211122150806469"></p><hr><p>如果要对实例物体进行大规模的散布的话，创建一个平面，调整好大小后，为平面添加一个阵列修改器</p><p>ctrl+p将实例物体与平面绑定父子级关系</p><p>找到当前阵列所在的物体，点开属性找到实例化进行开启，选择顶点或者面</p><hr><h2 id="关联物体转为本地"><a href="#关联物体转为本地" class="headerlink" title="关联物体转为本地"></a>关联物体转为本地</h2><p><img src="https://cdn.jsdelivr.net/gh/lafew/picgo_xyz@main//img/image-20211122151832046.png" alt="image-20211122151832046"></p><h2 id="直接创建实例面"><a href="#直接创建实例面" class="headerlink" title="直接创建实例面"></a>直接创建实例面</h2><p><img src="https://cdn.jsdelivr.net/gh/lafew/picgo_xyz@main//img/image-20211122152044998.png" alt="image-20211122152044998"></p><p>比较方便</p><p>✌✌✌</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> blender </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>阵列修改器与粒子系统</title>
+      <link href="/2021/11/19/%E9%98%B5%E5%88%97%E4%BF%AE%E6%94%B9%E5%99%A8%E4%B8%8E%E7%B2%92%E5%AD%90%E7%B3%BB%E7%BB%9F/"/>
+      <url>/2021/11/19/%E9%98%B5%E5%88%97%E4%BF%AE%E6%94%B9%E5%99%A8%E4%B8%8E%E7%B2%92%E5%AD%90%E7%B3%BB%E7%BB%9F/</url>
+      
+        <content type="html"><![CDATA[<h2 id="粒子系统"><a href="#粒子系统" class="headerlink" title="粒子系统"></a>粒子系统</h2><p>新建一个平面，为其添加粒子设置，选择毛发</p><p><img src="https://cdn.jsdelivr.net/gh/lafew/picgo_xyz@main//img/image-20211119162123559.png" alt="image-20211119162123559"></p><p>将毛发的数量改成4（符合平面顶点数量），然后将发射源改成顶点</p><p><img src="https://cdn.jsdelivr.net/gh/lafew/picgo_xyz@main//img/image-20211119162318737.png" alt="image-20211119162318737"></p><p>注意把顶点下面的随机顺序取消勾选</p><p>然后新建一个猴头，选中粒子系统所在的物体（平面），选择粒子设置中的渲染，渲染为从路径换成物体</p><p>再点开物体，实例物体选择猴头就行</p><p><img src="https://cdn.jsdelivr.net/gh/lafew/picgo_xyz@main//img/image-20211119162728773.png" alt="image-20211119162728773"></p><p><img src="https://cdn.jsdelivr.net/gh/lafew/picgo_xyz@main//img/image-20211119162905357.png" alt="image-20211119162905357"></p><p>猴头的朝向会与新建的不同，打开毛发的高级选项勾选旋转就行了</p><p><img src="https://cdn.jsdelivr.net/gh/lafew/picgo_xyz@main//img/image-20211119163026419.png" alt="image-20211119163026419"></p><p>物体下勾选全局坐标系就会以新建物体的坐标位置进行发射，物体旋转和物体缩放可以通过控制本体来实现副本的缩放与旋转</p><p><img src="https://cdn.jsdelivr.net/gh/lafew/picgo_xyz@main//img/image-20211119163150662.png" alt="image-20211119163150662"></p><h2 id="与阵列修改器结合"><a href="#与阵列修改器结合" class="headerlink" title="与阵列修改器结合"></a>与阵列修改器结合</h2><p>在修改器中要先对平面添加阵列修改器然后再添加粒子系统，注意要修改毛发数量，还要勾选使用修改器堆栈</p><p><img src="https://cdn.jsdelivr.net/gh/lafew/picgo_xyz@main//img/image-20211119163639278.png" alt="image-20211119163639278"></p><h2 id="物体独立"><a href="#物体独立" class="headerlink" title="物体独立"></a>物体独立</h2><p>在粒子设置下，点开小箭头，点击转换，就会使复制出来的物体进行独立，数据独立化跟之前的操作一样，参考上一篇即可</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> blender </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>阵列修改器与网格实例化</title>
+      <link href="/2021/11/19/%E9%98%B5%E5%88%97%E4%BF%AE%E6%94%B9%E5%99%A8%E4%B8%8E%E7%BD%91%E6%A0%BC%E5%AE%9E%E4%BE%8B%E5%8C%96/"/>
+      <url>/2021/11/19/%E9%98%B5%E5%88%97%E4%BF%AE%E6%94%B9%E5%99%A8%E4%B8%8E%E7%BD%91%E6%A0%BC%E5%AE%9E%E4%BE%8B%E5%8C%96/</url>
+      
+        <content type="html"><![CDATA[<h1 id="网格实例化"><a href="#网格实例化" class="headerlink" title="网格实例化"></a>网格实例化</h1><h2 id="举例"><a href="#举例" class="headerlink" title="举例"></a>举例</h2><p>新建一个<strong>平面</strong>和一个<strong>球体</strong></p><p>ctrl+p绑定父子级关系，平面作为父级</p><p>点击父级物体属性，找到实例化</p><p><img src="https://cdn.jsdelivr.net/gh/lafew/picgo_xyz@main//img/image-20211119011406296.png" alt="image-20211119011406296"></p><p>默认是没有效果的，如果点击顶点，球体就会按照平面的顶点进行排列</p><p><img src="https://cdn.jsdelivr.net/gh/lafew/picgo_xyz@main//img/image-20211119011601742.png" alt="image-20211119011601742"></p><p>点击面，球体就会按照父级的每一个面进行排列</p><p><img src="https://cdn.jsdelivr.net/gh/lafew/picgo_xyz@main//img/image-20211119011723346.png" alt="image-20211119011723346"></p><h2 id="显示实例"><a href="#显示实例" class="headerlink" title="显示实例"></a>显示实例</h2><p>勾选与否可以隐藏父级物体</p><h2 id="按照面尺寸缩放"><a href="#按照面尺寸缩放" class="headerlink" title="按照面尺寸缩放"></a>按照面尺寸缩放</h2><p>在实例化下面选择面，勾选按面尺寸缩放，通过调成面的缩放可以控制球体的大小</p><p>通过调整系数可以控制整体球体在面上的大小</p><hr><p>非网格物体也可以进行实例，比如灯光，</p><p>实例化后再通过阵列修改器进行复制</p><p><img src="https://cdn.jsdelivr.net/gh/lafew/picgo_xyz@main//img/image-20211119012818947.png" alt="image-20211119012818947"></p><hr><p>如果想要实例下的物体独立，则需要先选中父级物体然后ctrl+a，再选择实例独立化，这样每个物体就都可以单独调节了，实例独立化注意父级和保持层级</p><p><img src="https://cdn.jsdelivr.net/gh/lafew/picgo_xyz@main//img/image-20211119013441289.png" alt="image-20211119013441289"></p><p>需要注意的是，独立出来的灯光数据也是一样的，如果要单独调节有两种方式</p><p>第一种是直接点击创建副本</p><p>第二种是点击物体-关系-使其独立化-物体和数据，如下所示：</p><p><img src="https://cdn.jsdelivr.net/gh/lafew/picgo_xyz@main//img/image-20211119013954434.png" alt="image-20211119013954434"></p><hr><p>以上就是阵列修改器与网格实例化的内容了</p><p>🎉🎉🎉</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> blender </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>阵列修改器全部参数</title>
+      <link href="/2021/11/18/%E9%98%B5%E5%88%97%E4%BF%AE%E6%94%B9%E5%99%A8%E5%85%A8%E9%83%A8%E5%8F%82%E6%95%B0/"/>
+      <url>/2021/11/18/%E9%98%B5%E5%88%97%E4%BF%AE%E6%94%B9%E5%99%A8%E5%85%A8%E9%83%A8%E5%8F%82%E6%95%B0/</url>
+      
+        <content type="html"><![CDATA[<h1 id="阵列修改器全部参数"><a href="#阵列修改器全部参数" class="headerlink" title="阵列修改器全部参数"></a>阵列修改器全部参数</h1><p>应用修改器之前如若修改物体尺寸，修改之后一定要应用，否则容易出现效果偏移</p><h2 id="适配长度"><a href="#适配长度" class="headerlink" title="适配长度"></a>适配长度</h2><p><img src="https://cdn.jsdelivr.net/gh/lafew/picgo_xyz@main//img/image-20211118172715576.png" alt="image-20211118172715576"></p><p>适配长度是指从网格的质心点出发的距离，如果长度内能出现下一个物体的质心点则会显示，如果长度内不能出现物体的质心点，则不显示要复制的副本。</p><h2 id="适配曲线"><a href="#适配曲线" class="headerlink" title="适配曲线"></a>适配曲线</h2><p>适配曲线只能控制复制物体的数量，并不能控制复制的副本沿着曲线的形态进行复制</p><h2 id="相对偏移"><a href="#相对偏移" class="headerlink" title="相对偏移"></a>相对偏移</h2><p>能够根据物体自身的边界框的尺寸来衡量偏移的间距（物体自身的尺寸*偏移系数），改变物体大小会影响物体之间的距离</p><h2 id="恒定偏移"><a href="#恒定偏移" class="headerlink" title="恒定偏移"></a>恒定偏移</h2><p>根据每一个副本之间的质心点间的距离来确定偏移量，添加修改器后改变物体的大小不会影响副本之间的距离</p><h2 id="相对偏移-恒定偏移"><a href="#相对偏移-恒定偏移" class="headerlink" title="相对偏移+恒定偏移"></a>相对偏移+恒定偏移</h2><p>两个混合起来使用可以控制每两个副本之间间隔多少距离进行排列</p><h2 id="物体偏移"><a href="#物体偏移" class="headerlink" title="物体偏移"></a>物体偏移</h2><p>通过新建一个空物体来控制副本的偏移，可以传递缩放和旋转</p><p><img src="https://cdn.jsdelivr.net/gh/lafew/picgo_xyz@main//img/image-20211118175035274.png" alt="image-20211118175035274"></p><h2 id="合并"><a href="#合并" class="headerlink" title="合并"></a>合并</h2><p>合并重叠点，在应用阵列修改器的时候，删除物体的顶面和底面，避免产生重叠面。</p><ol><li><p>第一个副本和最后一个副本</p><p>环形阵列的时候会用到，第一个副本与最后一个副本本质上不属于相邻顶点，只是在视觉上看起来比较近，但开启合并后不会进行顶点合并，勾选这个选项后，环形阵列就可以完美的合并。</p></li></ol><h2 id="UV偏移"><a href="#UV偏移" class="headerlink" title="UV偏移"></a>UV偏移</h2><p>控制UV贴图的显示</p><h2 id="端点样式"><a href="#端点样式" class="headerlink" title="端点样式"></a>端点样式</h2><h3 id="封盖起点"><a href="#封盖起点" class="headerlink" title="封盖起点"></a>封盖起点</h3><p>控制阵列的起始物体，以此物体为开头进行复制</p><h3 id="结束点"><a href="#结束点" class="headerlink" title="结束点"></a>结束点</h3><p>控制阵列的结束物体，以此物体为结尾进行复制</p><p><em>增加阵列数量的时候也会进行同步更新</em></p><p>移动端点物体只需要在编辑模式下改变物体的位置就行</p><hr><h2 id="按松散块"><a href="#按松散块" class="headerlink" title="按松散块"></a>按松散块</h2><p>阵列修改器在应用之后得到的是一个整体，如果想要得到单独的物体，需要按<strong>p</strong>键，选择按松散块，进行拆开</p><p><img src="https://cdn.jsdelivr.net/gh/lafew/picgo_xyz@main//img/image-20211118210942997.png" alt="image-20211118210942997"></p><p>但是分离出来的物体的原点会继承原来阵列的原点</p><p>只需要物体模式下，选择左上角物体-设置原点-原点_几何中心，由于选中的是多个物体，所以点击命令时需要按住alt键。</p><p><img src="https://cdn.jsdelivr.net/gh/lafew/picgo_xyz@main//img/image-20211118211404264.png" alt="image-20211118211404264"></p><p>如果安装了M3工具则可以直接按shift+s选择原点到几何中心。</p><p><img src="https://cdn.jsdelivr.net/gh/lafew/picgo_xyz@main//img/image-20211118211535276.png" alt="image-20211118211535276"></p><p>以上便是阵列修改器的所有参数介绍。</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> blender </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>blender学习记录————修改器篇</title>
+      <link href="/2021/11/18/blender%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95%E2%80%94%E2%80%94%E2%80%94%E2%80%94%E4%BF%AE%E6%94%B9%E5%99%A8%E7%AF%87/"/>
+      <url>/2021/11/18/blender%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95%E2%80%94%E2%80%94%E2%80%94%E2%80%94%E4%BF%AE%E6%94%B9%E5%99%A8%E7%AF%87/</url>
+      
+        <content type="html"><![CDATA[<h1 id="blender学习记录————修改器篇"><a href="#blender学习记录————修改器篇" class="headerlink" title="blender学习记录————修改器篇"></a>blender学习记录————修改器篇</h1><h2 id="修改器通用设置"><a href="#修改器通用设置" class="headerlink" title="修改器通用设置"></a>修改器通用设置</h2><ol><li>从上到下按顺序执行</li><li>应用顺序也要注意 </li></ol><h2 id="批量应用"><a href="#批量应用" class="headerlink" title="批量应用"></a>批量应用</h2><ol><li>在物体模式下选择物体CTRL+a</li></ol><p><img src="https://cdn.jsdelivr.net/gh/lafew/picgo_xyz@main//img/image-20211118161430733.png" alt="image-20211118161430733"></p><p>找到其中的可视几何到网格</p><ol start="2"><li>官方自带的修改器工具</li></ol><p><img src="https://cdn.jsdelivr.net/gh/lafew/picgo_xyz@main//img/image-20211118161621044.png" alt="image-20211118161621044"></p><p>打开后就会看到</p><p><img src="https://cdn.jsdelivr.net/gh/lafew/picgo_xyz@main//img/image-20211118161740554.png" alt="image-20211118161740554"></p><p>点击全部应用就好了（在物体模式下）</p><h2 id="复制"><a href="#复制" class="headerlink" title="复制"></a>复制</h2><ol><li>点击小箭头，选择复制</li><li>把鼠标放在相应的修改器上按shift+d进行复制</li></ol><h3 id="把修改器传递到其他物体上"><a href="#把修改器传递到其他物体上" class="headerlink" title="把修改器传递到其他物体上"></a>把修改器传递到其他物体上</h3><ol><li>先选中需要传递的物体然后最后选中带有修改器的物体按ctrl+l生成修改器关联项就可以实现了</li></ol><p><img src="https://cdn.jsdelivr.net/gh/lafew/picgo_xyz@main//img/image-20211118162557664.png" alt="image-20211118162557664"></p><ol start="2"><li>blender自带的插件——复制属性菜单</li></ol><p><img src="https://cdn.jsdelivr.net/gh/lafew/picgo_xyz@main//img/image-20211118162813259.png" alt="image-20211118162813259"></p><p>跟之前的选择方法一样，选择完成后按ctrl+c,选择复制修改器</p><p><img src="https://cdn.jsdelivr.net/gh/lafew/picgo_xyz@main//img/image-20211118164325355.png" alt="image-20211118164325355"></p><h2 id="也可以从大纲视图中进行修改"><a href="#也可以从大纲视图中进行修改" class="headerlink" title="也可以从大纲视图中进行修改"></a>也可以从大纲视图中进行修改</h2>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> blender,修改器 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>图片上传测试</title>
+      <link href="/2021/11/17/%E5%9B%BE%E7%89%87%E4%B8%8A%E4%BC%A0%E6%B5%8B%E8%AF%95/"/>
+      <url>/2021/11/17/%E5%9B%BE%E7%89%87%E4%B8%8A%E4%BC%A0%E6%B5%8B%E8%AF%95/</url>
+      
+        <content type="html"><![CDATA[<h1 id="测试将本地图片上传到github搭建的图床"><a href="#测试将本地图片上传到github搭建的图床" class="headerlink" title="测试将本地图片上传到github搭建的图床"></a>测试将本地图片上传到github搭建的图床</h1><p>图床搭建好之后，上传本地图片，并在Typora中编辑markdown文件，直接复制上传</p><p>就像这样：</p><p><img src="https://cdn.jsdelivr.net/gh/lafew/picgo_xyz@main//img/0.jpg" alt="0"></p><p>现在发布到博客上试试！</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 测试 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>测试（markdown）</title>
+      <link href="/2021/11/15/%E6%B5%8B%E8%AF%95%EF%BC%88markdown%EF%BC%89/"/>
+      <url>/2021/11/15/%E6%B5%8B%E8%AF%95%EF%BC%88markdown%EF%BC%89/</url>
+      
+        <content type="html"><![CDATA[<h1 id="Hello-Markdown"><a href="#Hello-Markdown" class="headerlink" title="Hello Markdown!"></a>Hello Markdown!</h1><p>活着真是累啊</p><p>就像现在要学习Markdown，还要学习什么<em>斜体</em>，还有<strong>加粗</strong>,简直是人间苦难</p><h2 id="列表是什么东西"><a href="#列表是什么东西" class="headerlink" title="列表是什么东西"></a>列表是什么东西</h2><ol><li>这就是一个有编号的列表</li><li>这就是从<strong>1</strong>开始，一个数字后面加一个点和空格</li><li>编号的数字是无所谓的，渲染的时候会自动编号</li></ol><p>插入一段就可以开启新的列表</p><ol><li>比如这样</li><li>这样</li><li>还有这样</li><li>哈哈哈哈嗝</li></ol><h3 id="下面是无编号列表"><a href="#下面是无编号列表" class="headerlink" title="下面是无编号列表"></a>下面是无编号列表</h3><ul><li>这是第一个没有编号的列表</li></ul><ul><li>其实用减号也是可以的啦</li></ul><ul><li>当然也可以用*号，随你喜欢了</li></ul><p>要注意的是<strong>如果你使用了<em>Markdown、All in one</em>他有很多自动补全功能，可以自己摸索一下</strong></p><h2 id="想不想插入图片呢？我滴宝"><a href="#想不想插入图片呢？我滴宝" class="headerlink" title="想不想插入图片呢？我滴宝"></a>想不想插入图片呢？我滴宝</h2><p>这很简单，推荐您把图片复制到您的文章目录下，用下面的语法加入图片，请看魔法</p><p><img src="image.jpg" alt="wallhaven-g81e53.jpg"><br><em>这里展示的是图片的标题</em><br>咦？我怎么实验到了这里不成功了，让我来看看出了什么问题</p><p>咳咳！再来一遍</p><p><img src="wallhaven-g81e53.jpg"><br><em>这是我最近比较喜欢的一张图片，怎么就看不了嘞？</em></p><p>好吧先来尝试一下另外一种办法，还记得之前安装的Paste Image插件吗？只要你在别处复制一幅图片，然后在要插入的地方按住Ctrl+alt+v将图片粘贴插入即可</p><p>来试一下</p><p><img src="2021-11-14-22-57-05.png"></p><p>好吧，通过这个我也明白了第一种方式怎么使用</p><ul><li>首先先在编辑器敲出！[]这个命令</li><li>然后是（图片名称）</li><li>这里再尝试一下</li></ul><p><img src="wallhaven-g81e53.jpg"></p><p>ok!这就成功了！</p><h2 id="公式"><a href="#公式" class="headerlink" title="公式"></a>公式</h2><p>不得不承认，我对这个没什么兴趣，因为跟我的专业关联不大，不过技多不压身，也来尝试一下吧！</p><p>公式可是Markdown的亮点，因为它支持Latex格式公式（虽然我也不知道这是什么东西），虽然新版的Word也支持了，不过还是Markdown写起来比较流畅。</p><p>首先我们有inline公式，只要在文中输入两个美元符号，之间的内容就是公式了，注意美元符号要和前后文本之间有个空格，确保兼容性</p><p> $\lim_{x \to \infin}f(x）$ </p><p>yes!成功，不过我不知道其他的公式怎么打出来，有空再学习吧！</p><p>当然也可以写独立的公式，就是一对美元符号之间的内容：<br>$$<br>\lim_{x \to 0}\frac{sin(t)}{x}=1<br>$$</p><p>$$<br>\lim_{x \to \infin}x^{\frac{1}{x}}=1<br>\</p><p>f(x)=\beta_1 x+\beta_2<br>\tag{1}<br>$$</p><p>可以看到公式线性写得，你在纸上怎么写就在这里怎么写,\ 后面可以跟特殊符号、希腊字母等、_和^分别对应上标和下标，{}可以把符号变成一组，例如：$x^a<em>b$ 和 $x^{a</em>b}$ 这种区别。公式重要换行的话需要输入一行\、可以输入\tag{1}来给公式编号</p><p>总之有很多玩法，大家可以参考一下<em>MathJAX常见问题</em>(有空就去学习，我瞎说的)</p><h2 id="表格"><a href="#表格" class="headerlink" title="表格"></a>表格</h2><p>表格略有点麻烦</p><p>首先用|来定义列，— | :—: | —:这个放在第一列下面用于区分表头，冒号的位置用来决定是居中还是右对齐或者左对齐。</p><p>来尝试一下</p><table><thead><tr><th align="left">你</th><th align="center">我</th><th align="right">他</th></tr></thead><tbody><tr><td align="left"><em>默认左对齐</em></td><td align="center">‘这一列居中’</td><td align="right"><strong>这一列右对齐</strong></td></tr><tr><td align="left">1</td><td align="center">2</td><td align="right">3</td></tr><tr><td align="left">4</td><td align="center">5</td><td align="right">6</td></tr></tbody></table><p>到这里我不知道为什么渲染不出来竖线</p><p>还有一个简单的玩法就是：Markdown Tables Generator</p><p>这里你可以把word、excle里面的表格直接粘贴到网页中，然后生成对应的整齐的Markdown表格<br>| 1  | 2  | 3  | 4  | 5  | 6  |<br>|—-|—-|—-|—-|—-|—-|<br>| 11 | 22 | 33 | 44 | 55 | 66 |</p><p>牛逼，简直完美</p><h2 id="链接"><a href="#链接" class="headerlink" title="链接"></a>链接</h2><p>链接可以连接到网上某个url网址，如果使用下面这个语法：<br>*<a href="https://www.google.com/">google</a><br>如果使用Markdown All in one,则可以复制一个合法的url，然后选中某个文字直接粘贴变成一个链接：</p><p><a href="http://lafew.xyz/">VSCode</a></p><p><a href="http://lafew.xyz/">google</a></p><h2 id="代码块-什么东西我也不知道"><a href="#代码块-什么东西我也不知道" class="headerlink" title="代码块 (什么东西我也不知道)"></a>代码块 (什么东西我也不知道)</h2><p>我们平时会用到代码，Markdown最闪耀的就是渲染代码，如果渲染器支持可以实现各种语言的高亮。首先是inline代码，只要在行中间写两个’’之间的就会被认为是代码，不会被Markdown渲染格式，但是inline代码不支持指定语言。你可以这么写：</p><p><code>python s = &quot;Python syntax highlighting&quot; print s </code></p><p><code>javascript var s = &quot;JavaScript syntax highlighting&quot;; alert(s); </code></p><p>我自己抄了一下发现不行，还是复制粘贴吧！</p><p><code>python s = &quot;Python syntax highlighting&quot; print s </code></p><p><code>javascript var s = &quot;JavaScript syntax highlighting&quot;; alert(s); </code></p><p>还是得英文啊兄弟们，哎</p><h2 id="输出"><a href="#输出" class="headerlink" title="输出"></a>输出</h2><p>由于Markdown本身是一种代码，需要渲染才能够看着比较舒服，所以如果你发给不会使用Markdown的人可能会有困扰。我们之前装了Markdown PDF，因此可以输出成PDF、图片、网页等等渲染过的格式。只需要再md文件编辑的地方点击右键就可以看到输出成PDF等选项了。</p><p>注意，Markdown PDF树池不支持公式渲染，大家可以使用pandoc插件输出，那个很强大，还可以输出为Word文档。除了插件，你还需要安装Pandoc这个软件。只需要按下ctrl+shift+p，在命令框中输入pandoc render，剩下的自己就能看明白了。</p><h2 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h2><ol><li>分割线：很简单，单独一段就打上三个减号：—</li><li>引用：在需要引用的一行前加上&gt;:</li></ol><hr><p>这是个分割线，终于会了哈哈哈哈嗝</p><blockquote><p>这是引用</p></blockquote><blockquote><p>这个也是哈哈</p></blockquote><hr><p>这里也添加个分割线，看着舒服</p><ol start="3"><li>自己摸索吧，Markdown没有什么字体类型、颜色、大小的设置，挚友标题、级别、段落。所以说它是一种内容为中心的写作方式。</li></ol><h2 id="写在最后-Markdown-牛逼！！！"><a href="#写在最后-Markdown-牛逼！！！" class="headerlink" title="写在最后 Markdown 牛逼！！！"></a>写在最后 Markdown 牛逼！！！</h2>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 测试 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Hello World</title>
+      <link href="/2021/11/15/hello-world/"/>
+      <url>/2021/11/15/hello-world/</url>
+      
+        <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+  
+  
+</search>
