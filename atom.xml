@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2021-11-22T08:56:26.823Z</updated>
+  <updated>2021-11-22T13:54:04.759Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,63 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>常见基础布尔问题</title>
+    <link href="http://example.com/2021/11/22/%E5%B8%B8%E8%A7%81%E5%9F%BA%E7%A1%80%E5%B8%83%E5%B0%94%E9%97%AE%E9%A2%98/"/>
+    <id>http://example.com/2021/11/22/%E5%B8%B8%E8%A7%81%E5%9F%BA%E7%A1%80%E5%B8%83%E5%B0%94%E9%97%AE%E9%A2%98/</id>
+    <published>2021-11-22T13:33:52.000Z</published>
+    <updated>2021-11-22T13:54:04.759Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="常见基础布尔问题"><a href="#常见基础布尔问题" class="headerlink" title="常见基础布尔问题"></a>常见基础布尔问题</h1><p>布尔失败+法向着色传递+着色撕裂</p><ol><li><p>如有重叠面导致布尔失败，建议将快速模式改为准确模式</p></li><li><p>快速模式下，非流形结构计算错误（物体没有闭合，有孔洞），可勾选孔洞容错</p></li><li><p>法向问题：用平面进行布尔时容易产生方向问题，查看法线朝向即可</p></li><li><p>布尔修改器确认前的平滑着色与否，只会影响布尔交接区域</p></li><li><p>布尔的时候注意面朝向的问题</p></li><li><p>布尔后运行倒角修改器，会产生着色撕裂的问题，倒角模式下的硬化法向可以解决该问题</p></li><li><p>除此之外也可以为产生问题的物体添加一个加权法向修改器，权重模式选择面的面积，将其对应的法向进行一个加权的处理，也可以得到正确的结果，有时候需要两种办法组合使用</p></li></ol><p><img src="https://cdn.jsdelivr.net/gh/lafew/picgo_xyz@main//img/image-20211122215311029.png" alt="image-20211122215311029"></p><hr><p>以上就是布尔的时候经常遇到的问题了</p>]]></content>
+    
+    
+    <summary type="html">blender学习记录</summary>
+    
+    
+    
+    
+    <category term="blender" scheme="http://example.com/tags/blender/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>内置布尔工具BOOL TOOL 全参数解析</title>
+    <link href="http://example.com/2021/11/22/%E5%86%85%E7%BD%AE%E5%B8%83%E5%B0%94%E5%B7%A5%E5%85%B7BOOL-TOOL-%E5%85%A8%E5%8F%82%E6%95%B0%E8%A7%A3%E6%9E%90/"/>
+    <id>http://example.com/2021/11/22/%E5%86%85%E7%BD%AE%E5%B8%83%E5%B0%94%E5%B7%A5%E5%85%B7BOOL-TOOL-%E5%85%A8%E5%8F%82%E6%95%B0%E8%A7%A3%E6%9E%90/</id>
+    <published>2021-11-22T12:26:16.000Z</published>
+    <updated>2021-11-22T13:32:43.240Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="BOOL-TOOL-工具"><a href="#BOOL-TOOL-工具" class="headerlink" title="BOOL TOOL 工具"></a>BOOL TOOL 工具</h1><p><img src="https://cdn.jsdelivr.net/gh/lafew/picgo_xyz@main//img/image-20211122203355574.png" alt="image-20211122203355574"></p><p>对是以上两个选项进行勾选</p><p>此工具分为自动布尔和brush布尔，自动布尔为运行后直接进行布尔然后应用修改器</p><p>而brush布尔是为所选物体添加修改器</p><p><img src="https://cdn.jsdelivr.net/gh/lafew/picgo_xyz@main//img/image-20211122205445517.png" alt="image-20211122205445517"></p><h2 id="快捷键"><a href="#快捷键" class="headerlink" title="快捷键"></a>快捷键</h2><p><em><strong>brush布尔</strong></em></p><p>差集 ctrl+小键盘减号</p><p>并集 ctrl+小键盘加号</p><p>交集 ctrl+小键盘乘号</p><p>切片 ctrl+小键盘除号</p><p><em><strong>自动布尔</strong></em></p><p>多按一个shift，其余与上述快捷键一致</p><p><em><strong>菜单调出快捷键</strong></em></p><p>ctrl+shift+b</p><hr><h1 id="集合绘制布尔技巧与快速新建工具全解"><a href="#集合绘制布尔技巧与快速新建工具全解" class="headerlink" title="集合绘制布尔技巧与快速新建工具全解"></a>集合绘制布尔技巧与快速新建工具全解</h1><p>先对物体添加布尔修改器，运算类型改成集合，然后在大纲视图新建一个集合，将该集合设置成布尔用的集合，blender默认新建物体的时候，以当前所在集合或集合内的物体主进行新建</p><p>这样就可以设置一个布尔集合</p><p>但是无法使该集合为线框显示</p><p>此时可以新拖出来一个窗口，按N键选择视图将本地集合下的布尔集合进行隐藏，新拖出来的窗口作为布尔运算的一个预览窗口</p><p><img src="https://cdn.jsdelivr.net/gh/lafew/picgo_xyz@main//img/image-20211122210931930.png" alt="image-20211122210931930"></p><h2 id="快速新建工具全解"><a href="#快速新建工具全解" class="headerlink" title="快速新建工具全解"></a>快速新建工具全解</h2><p>按住ctrl会产生一个该工具自带的吸附，会自动吸附到网格物体上</p><p><img src="https://cdn.jsdelivr.net/gh/lafew/picgo_xyz@main//img/image-20211122211404041.png" alt="image-20211122211404041"></p><p>若要使用全局吸附，则将吸附至几何数据改为默认</p><p>直接点击鼠标左键为以该点作为角进行创建，按住alt则是以鼠标左键点击的点为中心向外扩散进行创建</p><p>等比创建需要再按下shift，等比创建完平面后再按shift则会创建一个正方体</p><hr><p>关于视角朝向，开启坐标系选择表曲面，基础设置中的平面轴改为自动定轴</p><p><img src="https://cdn.jsdelivr.net/gh/lafew/picgo_xyz@main//img/image-20211122212255594.png" alt="image-20211122212255594"></p><p><em><strong>深度</strong></em></p><p>游标平面</p><p>以游标所在的平面进行创建</p>]]></content>
+    
+    
+    <summary type="html">blender学习记录</summary>
+    
+    
+    
+    
+    <category term="blender" scheme="http://example.com/tags/blender/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>布尔修改器全解析</title>
+    <link href="http://example.com/2021/11/22/%E5%B8%83%E5%B0%94%E4%BF%AE%E6%94%B9%E5%99%A8%E5%85%A8%E8%A7%A3%E6%9E%90/"/>
+    <id>http://example.com/2021/11/22/%E5%B8%83%E5%B0%94%E4%BF%AE%E6%94%B9%E5%99%A8%E5%85%A8%E8%A7%A3%E6%9E%90/</id>
+    <published>2021-11-22T11:55:26.000Z</published>
+    <updated>2021-11-22T12:24:17.906Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="布尔修改器"><a href="#布尔修改器" class="headerlink" title="布尔修改器"></a>布尔修改器</h1><p>为物体添加布尔修改器，运算对象类型改成物体或者集合，然后拿吸管吸取需要布尔的物体或集合</p><p><img src="https://cdn.jsdelivr.net/gh/lafew/picgo_xyz@main//img/image-20211122200111638.png" alt="image-20211122200111638"></p><p>默认情况下不会对原生物体进行隐藏，</p><p>可以选择物体按H进行隐藏或者找到物体设置，视图，选择线框显示</p><p><img src="https://cdn.jsdelivr.net/gh/lafew/picgo_xyz@main//img/image-20211122200334093.png" alt="image-20211122200334093"></p><h2 id="集合布尔"><a href="#集合布尔" class="headerlink" title="集合布尔"></a>集合布尔</h2><p>对需要布尔的物体新建一个集合，然后把运算对象类型从物体改成集合，选择所需要的集合</p><p><img src="https://cdn.jsdelivr.net/gh/lafew/picgo_xyz@main//img/image-20211122200821675.png" alt="image-20211122200821675"></p><h3 id="解算器"><a href="#解算器" class="headerlink" title="解算器"></a>解算器</h3><p>分为快速和准确</p><p>在有重叠面时，快速模式会出现错误，需要选择准确模式，准确模式下有一个解算器选项-孔洞容错，在执行孔洞布尔时会进行自动的填充和连接，还是要避免产生重叠面，</p><p><img src="https://cdn.jsdelivr.net/gh/lafew/picgo_xyz@main//img/image-20211122201956532.png" alt="image-20211122201956532"></p><p>准确模式在物体模式下还有一个自身选项，勾选自身可以使本身变成被布尔的对象</p><p><img src="https://cdn.jsdelivr.net/gh/lafew/picgo_xyz@main//img/image-20211122202254968.png" alt="image-20211122202254968"></p><hr><p>以上就是布尔修改器的全部参数了</p>]]></content>
+    
+    
+    <summary type="html">blender学习记录</summary>
+    
+    
+    
+    
+    <category term="blender" scheme="http://example.com/tags/blender/"/>
+    
+  </entry>
   
   <entry>
     <title>倒角修改器解析</title>
