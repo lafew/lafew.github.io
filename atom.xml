@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2021-11-22T13:54:04.759Z</updated>
+  <updated>2021-11-23T08:09:20.583Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,44 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>精简修改器全解析</title>
+    <link href="http://example.com/2021/11/23/%E7%B2%BE%E7%AE%80%E4%BF%AE%E6%94%B9%E5%99%A8%E5%85%A8%E8%A7%A3%E6%9E%90/"/>
+    <id>http://example.com/2021/11/23/%E7%B2%BE%E7%AE%80%E4%BF%AE%E6%94%B9%E5%99%A8%E5%85%A8%E8%A7%A3%E6%9E%90/</id>
+    <published>2021-11-23T07:40:35.000Z</published>
+    <updated>2021-11-23T08:09:20.583Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="精简修改器全解析"><a href="#精简修改器全解析" class="headerlink" title="精简修改器全解析"></a>精简修改器全解析</h1><p>尽量维持网格物体形态的同时减少面和点的数量</p><h2 id="塌陷"><a href="#塌陷" class="headerlink" title="塌陷"></a>塌陷</h2><p>两个相连顶点之间的线塌陷后两个顶点会进行合并的算法</p><p><img src="https://cdn.jsdelivr.net/gh/lafew/picgo_xyz@main//img/image-20211123154514406.png" alt="image-20211123154514406"></p><p>比率为1的时候模型面数不会发生改变，随着比率的降低模型的面数会相应的减少，但会尽力保持模型原有的形态结构不发生改变</p><p>但比率并不是面数量的百分比</p><p>比率的减少会使模型的面数朝着减少的趋势发展</p><p><strong>对称</strong></p><p>模型面树改变后会产生不对称的效果，如果想要使模型对称，勾选对称后选择相应的面数就可以了</p><p>要注意此对称是根据坐标原点进行对称的</p><p><strong>顶点组</strong></p><p>限制塌陷产生的范围</p><p>系数：类似顶点权重</p><h2 id="反细分"><a href="#反细分" class="headerlink" title="反细分"></a>反细分</h2><p><img src="https://cdn.jsdelivr.net/gh/lafew/picgo_xyz@main//img/image-20211123160037609.png" alt="image-20211123160037609"></p><p>迭代数量越多面数越少，是一种反向计算</p><h2 id="平面"><a href="#平面" class="headerlink" title="平面"></a>平面</h2><p><img src="https://cdn.jsdelivr.net/gh/lafew/picgo_xyz@main//img/image-20211123160345625.png" alt="image-20211123160345625"></p><p>角度限制 当角度能够涵盖面之间的角度时，算法会对其进行合并</p><p>可以使用划界对精简进行限制</p><p><strong>所有边界</strong></p><p>勾选后使边界上的点（一个顶点只连接了两个边线）进行融并</p><hr><p>以上就是精简修改器的全部参数了</p><p>😀😀😀</p>]]></content>
+    
+    
+    <summary type="html">blender学习记录</summary>
+    
+    
+    
+    
+    <category term="blender" scheme="http://example.com/tags/blender/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>建形修改器全解析</title>
+    <link href="http://example.com/2021/11/23/%E5%BB%BA%E5%BD%A2%E4%BF%AE%E6%94%B9%E5%99%A8%E5%85%A8%E8%A7%A3%E6%9E%90/"/>
+    <id>http://example.com/2021/11/23/%E5%BB%BA%E5%BD%A2%E4%BF%AE%E6%94%B9%E5%99%A8%E5%85%A8%E8%A7%A3%E6%9E%90/</id>
+    <published>2021-11-23T07:08:18.000Z</published>
+    <updated>2021-11-23T07:39:46.299Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="建形修改器"><a href="#建形修改器" class="headerlink" title="建形修改器"></a>建形修改器</h1><p>可以实现网格面随着时间推移显示或消失（勾选反向）的效果</p><p><img src="https://cdn.jsdelivr.net/gh/lafew/picgo_xyz@main//img/image-20211123153739770.png" alt="image-20211123153739770"></p><p>起始帧控制开始出现或消失的位置，长度则控制所需时间</p><p>勾选随机，就使网格面随机出现</p><p>与阵列修改器结合使用</p>]]></content>
+    
+    
+    <summary type="html">blender学习记录</summary>
+    
+    
+    
+    
+    <category term="blender" scheme="http://example.com/tags/blender/"/>
+    
+  </entry>
   
   <entry>
     <title>常见基础布尔问题</title>
