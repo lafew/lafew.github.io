@@ -4,13 +4,95 @@
   
     
     <entry>
+      <title>蒙皮修改器</title>
+      <link href="/2021/11/25/%E8%92%99%E7%9A%AE%E4%BF%AE%E6%94%B9%E5%99%A8/"/>
+      <url>/2021/11/25/%E8%92%99%E7%9A%AE%E4%BF%AE%E6%94%B9%E5%99%A8/</url>
+      
+        <content type="html"><![CDATA[<h1 id="蒙皮修改器"><a href="#蒙皮修改器" class="headerlink" title="蒙皮修改器"></a>蒙皮修改器</h1><p><img src="https://cdn.jsdelivr.net/gh/lafew/picgo_xyz@main//img/image-20211125154148802.png" alt="image-20211125154148802"></p><ol><li>快捷键-蒙皮半径控制-编辑模式CTRL+A（可锁定XY轴向）</li><li>跟点-蒙皮不可或缺的元素，缺失则会出故障，影响生成骨架的跟骨骼</li><li>可借助清楚蒙皮数据重置蒙皮效果</li></ol>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> blender </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>螺旋修改器</title>
+      <link href="/2021/11/25/%E8%9E%BA%E6%97%8B%E4%BF%AE%E6%94%B9%E5%99%A8/"/>
+      <url>/2021/11/25/%E8%9E%BA%E6%97%8B%E4%BF%AE%E6%94%B9%E5%99%A8/</url>
+      
+        <content type="html"><![CDATA[<h1 id="螺旋修改器"><a href="#螺旋修改器" class="headerlink" title="螺旋修改器"></a>螺旋修改器</h1><p><img src="https://cdn.jsdelivr.net/gh/lafew/picgo_xyz@main//img/image-20211125103437485.png" alt="image-20211125103437485"></p><h3 id="网格工具与螺旋修改器区别"><a href="#网格工具与螺旋修改器区别" class="headerlink" title="网格工具与螺旋修改器区别"></a>网格工具与螺旋修改器区别</h3><ol><li>网格工具以游标为轴心</li><li>修改器默认以物体原点为轴心</li><li>修改器参数可随时调节</li><li>修改器可同时实现了旋绕和螺旋</li></ol><h2 id="参数"><a href="#参数" class="headerlink" title="参数"></a>参数</h2><ol><li>首尾相连，首尾自动合并</li><li>合并功能用于合并在轴上的点</li><li>螺旋修改器群生成UV，可借助拉伸UV使其适配象限</li><li>螺旋作用于轮廓，实心面结构会影响平滑着色</li></ol><h3 id="计算顺序"><a href="#计算顺序" class="headerlink" title="计算顺序"></a>计算顺序</h3><p>解决内外面问题</p><hr><p>以上便是螺旋修改器的介绍</p><h1 id="拓展环形阵列灯光系统"><a href="#拓展环形阵列灯光系统" class="headerlink" title="拓展环形阵列灯光系统"></a>拓展环形阵列灯光系统</h1><p>原理：对灯光进行面实例化</p><p>控制：借助钩挂使用空物体控制网格点（ctrl+h）</p><h2 id="自定义属性"><a href="#自定义属性" class="headerlink" title="自定义属性"></a>自定义属性</h2><ol><li>自定义属性因为改属性名会导致驱动关系断开，推荐先定义再绑定</li><li>属性名前加序号可进行排序</li><li>弧度转角度=弧度/180*pi</li><li>滑块小数/整数模式取决于属性值/默认值</li><li>驱动器可作用于绝大多数参数</li></ol><hr>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> blender </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>非修改器版本重构网格</title>
+      <link href="/2021/11/24/%E9%9D%9E%E4%BF%AE%E6%94%B9%E5%99%A8%E7%89%88%E6%9C%AC%E9%87%8D%E6%9E%84%E7%BD%91%E6%A0%BC/"/>
+      <url>/2021/11/24/%E9%9D%9E%E4%BF%AE%E6%94%B9%E5%99%A8%E7%89%88%E6%9C%AC%E9%87%8D%E6%9E%84%E7%BD%91%E6%A0%BC/</url>
+      
+        <content type="html"><![CDATA[<h1 id="重构网格（非修改器）"><a href="#重构网格（非修改器）" class="headerlink" title="重构网格（非修改器）"></a>重构网格（非修改器）</h1><p><img src="https://cdn.jsdelivr.net/gh/lafew/picgo_xyz@main//img/image-20211125095949891.png" alt="image-20211125095949891"></p><ol><li><p>非修改器重构网格无法实时查看效果，需要执行对应的重构功能</p></li><li><p>雕刻模式下</p><p>体素网格重构：ctrl+r</p><p>体素预估：shift+r</p><p>四边形网格重构：ctrl+alt+R(R=Remesh)</p></li></ol><hr><p><img src="https://cdn.jsdelivr.net/gh/lafew/picgo_xyz@main//img/image-20211125100953450.png" alt="image-20211125100953450"></p><h3 id="修复极点"><a href="#修复极点" class="headerlink" title="修复极点"></a>修复极点</h3><p>适应性大于0，修复极点会被禁用</p><h3 id="保留"><a href="#保留" class="headerlink" title="保留"></a>保留</h3><p>体积 不勾选，执行网格重构后会产生体积收缩</p><blockquote><p>给了多级精度修改器后就不能进行非修改器网格重构了,想要重构就要把修改器进行应用</p></blockquote><h2 id="四边形重构"><a href="#四边形重构" class="headerlink" title="四边形重构"></a>四边形重构</h2><p>针对开孔物体</p><hr><p>以上便是blender非修改器版本的重构网格介绍</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> blender </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>网格重构修改器</title>
+      <link href="/2021/11/24/%E7%BD%91%E6%A0%BC%E9%87%8D%E6%9E%84%E4%BF%AE%E6%94%B9%E5%99%A8/"/>
+      <url>/2021/11/24/%E7%BD%91%E6%A0%BC%E9%87%8D%E6%9E%84%E4%BF%AE%E6%94%B9%E5%99%A8/</url>
+      
+        <content type="html"><![CDATA[<h1 id="网格重构修改器"><a href="#网格重构修改器" class="headerlink" title="网格重构修改器"></a>网格重构修改器</h1><p>基于当前网格重新计算生成拓扑结构，适用于对雕刻。布尔。融球。文字等进行重构计算</p><h2 id="块状"><a href="#块状" class="headerlink" title="块状"></a>块状</h2><p>重构算法风格</p><p><img src="https://cdn.jsdelivr.net/gh/lafew/picgo_xyz@main//img/image-20211124174146046.png" alt="image-20211124174146046"></p><h3 id="八叉树算法深度"><a href="#八叉树算法深度" class="headerlink" title="八叉树算法深度"></a>八叉树算法深度</h3><p>决定精细度上线</p><h3 id="缩放"><a href="#缩放" class="headerlink" title="缩放"></a>缩放</h3><p>调整细节尺寸</p><h3 id="移除分离元素"><a href="#移除分离元素" class="headerlink" title="移除分离元素"></a>移除分离元素</h3><p>对分离网格进行移除，启用时受到阈值影响</p><h3 id="平滑着色"><a href="#平滑着色" class="headerlink" title="平滑着色"></a>平滑着色</h3><p>勾选添加平滑着色</p><h2 id="平滑与锐边"><a href="#平滑与锐边" class="headerlink" title="平滑与锐边"></a>平滑与锐边</h2><p>大致与上述块状一致</p><h2 id="体素"><a href="#体素" class="headerlink" title="体素"></a>体素</h2><p><img src="https://cdn.jsdelivr.net/gh/lafew/picgo_xyz@main//img/image-20211124174805089.png" alt="image-20211124174805089"></p><h3 id="体素大小"><a href="#体素大小" class="headerlink" title="体素大小"></a>体素大小</h3><p>设置体素尺寸，数值越小越精细，注意：过小的尺寸会导致大量面的生成，会很卡</p><h2 id="适应性"><a href="#适应性" class="headerlink" title="适应性"></a>适应性</h2><p>简化网格减少面熟</p><hr><ol><li>雕刻网格重构，顺便增减面</li><li>文字网格重构，输入中文要选择中文字体，目前原生没法支持非英文直接输入，可打字粘贴，出现输入文字带英文，换输入法就行</li><li>融球网格重构</li></ol><hr><p>以上就是网格重构修改器的参数了</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> blender </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>多级精度修改器</title>
       <link href="/2021/11/24/%E5%A4%9A%E7%BA%A7%E7%B2%BE%E5%BA%A6%E4%BF%AE%E6%94%B9%E5%99%A8/"/>
       <url>/2021/11/24/%E5%A4%9A%E7%BA%A7%E7%B2%BE%E5%BA%A6%E4%BF%AE%E6%94%B9%E5%99%A8/</url>
       
-        <content type="html"><![CDATA[]]></content>
+        <content type="html"><![CDATA[<h1 id="多级精度修改器"><a href="#多级精度修改器" class="headerlink" title="多级精度修改器"></a>多级精度修改器</h1><ol><li>非破坏性雕刻：改变现有基本网格或非破坏性修改器数据，不破坏拓扑</li><li>破坏性雕刻：雕刻同时，创建顶点，但会破坏物体拓扑</li><li>表面细分和多级精度修改器都创建细分，但修改器基于基本网格生成的修改数据，在雕刻模式下，挚友多级精度修改器的处理数据支持直接被雕刻</li><li>一般情况下，多级精度修改器需要在修改器堆栈置顶</li></ol><hr><p><img src="https://cdn.jsdelivr.net/gh/lafew/picgo_xyz@main//img/image-20211124171750979.png" alt="image-20211124171750979"></p><ol><li><p>级别多少取决于细分次数，需要创建才会有</p></li><li><p>应用是注意物体模式所对应的试图级别应与目标级别一致</p></li><li><p>雕刻基本网格 雕刻模式下 关闭-雕刻修改器数据</p><p>开启-雕刻基本网格</p></li><li><p>优化显示：物体模式下优化线框显示</p></li></ol><h2 id="细分"><a href="#细分" class="headerlink" title="细分"></a>细分</h2><ol><li>点击即可创建对应算法的细分处理</li><li>删除较高级：删除比当前设置级别高的精度</li><li>反细分：反向算出低级别细分</li><li>重建细分：重建所有可能的细分级别</li></ol><h2 id="形状"><a href="#形状" class="headerlink" title="形状"></a>形状</h2><ol><li>重构外形：从另外一个物体复制顶点数据（需要顶点数量等匹配一致）</li><li>应用到基型:将基础网格与细分后的形态匹配</li></ol><h2 id="高级"><a href="#高级" class="headerlink" title="高级"></a>高级</h2><p>参考表面细分</p><hr><p>以上便是多级精度修改器的参数了</p>]]></content>
       
       
+      
+        <tags>
+            
+            <tag> blender </tag>
+            
+        </tags>
       
     </entry>
     
