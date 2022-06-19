@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2021-11-25T07:57:28.459Z</updated>
+  <updated>2022-06-19T06:31:13.774Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,38 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>MD技巧</title>
+    <link href="http://example.com/2022/06/19/MD%E6%8A%80%E5%B7%A7/"/>
+    <id>http://example.com/2022/06/19/MD%E6%8A%80%E5%B7%A7/</id>
+    <published>2022-06-19T06:31:30.533Z</published>
+    <updated>2022-06-19T06:31:13.774Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="MD技巧"><a href="#MD技巧" class="headerlink" title="MD技巧"></a>MD技巧</h2><ol><li>编辑板片（z）</li><li>编辑曲线点（v）：不是真正的点</li><li>加点/分线（x）：精细控制，在线上右键</li><li>编辑圆弧（c）：选择命令后在线上直接拖</li><li>生成圆顺曲线，相当于倒角：在直角点上拖</li><li>延展：点两个点直接拖 </li></ol><h3 id="板片创建"><a href="#板片创建" class="headerlink" title="板片创建"></a>板片创建</h3><p>多边形：类似钢笔工具</p><p>长方形：矩形</p><p>内部多边形</p><h5 id="勾勒轮廓"><a href="#勾勒轮廓" class="headerlink" title="勾勒轮廓"></a>勾勒轮廓</h5><p>首先需要创建内部线</p><h3 id="褶皱"><a href="#褶皱" class="headerlink" title="褶皱"></a>褶皱</h3><p>为板片创建内部线（增加细分）</p><p>选择褶皱命令，左侧滑到右侧双击鼠标左键，选择合适的褶皱类型</p><p>然后选择褶皱缝合命令进行缝合</p><p>注：内部线分段数=3X+2（x为常数）</p><h3 id="缝纫"><a href="#缝纫" class="headerlink" title="缝纫"></a>缝纫</h3><p>n键直接缝纫</p><p>M键自由缝纫</p><p>按B可以拖动点</p><h4 id="熨斗工具"><a href="#熨斗工具" class="headerlink" title="熨斗工具"></a>熨斗工具</h4><p>热胀冷缩</p><p>收缩率正数 红色 衣服就会膨胀</p><p>收缩率负数 蓝色 衣服就会收缩</p><h4 id="调整贴图大小位置"><a href="#调整贴图大小位置" class="headerlink" title="调整贴图大小位置"></a>调整贴图大小位置</h4><p>布料-纹理-导入图片</p><p>直接点击可以移动位置，右上角图标可以放大和缩小</p><p>镜像复制CTRL+R</p><p>反向选择CTRL+SHIFT+I</p><p>显示与隐藏SHIFE+Q</p><p>对称板片和连动板片</p><p>对称等于镜像；连动等于复制</p><p>（方便一起操作，不需要可以解除）</p><h5 id="内部线间距"><a href="#内部线间距" class="headerlink" title="内部线间距"></a>内部线间距</h5><p>向内收缩一圈，可以调整间距和扩张数量，反方向就是往外</p><h5 id="克隆层"><a href="#克隆层" class="headerlink" title="克隆层"></a>克隆层</h5><p>分内部和外部</p><p>会自动缝起来</p><h3 id="内部线右键"><a href="#内部线右键" class="headerlink" title="内部线右键"></a>内部线右键</h3><p>转化为板片</p><p>转化为洞（布尔挖洞）</p><p>切断：断开缝纫，板片还在</p><p>剪切缝纫：断开了，缝线还在</p><p>3D视图</p><p>假缝</p><p>编辑假缝：右侧属性调整线的长度，长度越长，缝的越松，选择假缝，右键可以删除</p><p>固定到虚拟模特上，先点布料，再点虚拟模特可以钉上去，不需要可以删除</p><p>线段假缝，跟假缝属性一样，由点到线的区别</p><p>折叠安排命令：选择一根缝线直接拽</p><p>重置2D安排，布料回到创建时的位置。重置3D安排，回到结算前的位置</p><p>自动比例：不太好使</p><p>SHIFT+F显示安排点</p><p>SHIFT+Z显示线长度</p><p>SHIFT+X显示骨骼</p><p>ALT+X冷冻</p><p>CTRL+J反激活（不参与解算）</p><p>CTRL+L硬化（）</p><p>ALT+1带厚度的布料</p><p>ALT+3黑白显示</p><p>ALT+4透明显示</p><p>ALT+5透明网格显示</p><p>ALT+7应力图</p><p>CTRL+G水平翻转</p><p>B编辑缝纫线</p><h3 id="物体窗口"><a href="#物体窗口" class="headerlink" title="物体窗口"></a>物体窗口</h3><p>布料属性</p><p>弹性：打开后会收缩，比例越小越紧，增加比例加细节</p><p>衬条：布料周围加边</p><p>粒子间距：控制布料面数，间距越小面数越多，细节越多，模拟越慢</p><p>层级</p><p>衣服默认层级为0</p><p>经纬伸缩率：</p><p>通过伸缩率修改板片的长度</p><p>纬向X，经向Y</p><h6 id="压力"><a href="#压力" class="headerlink" title="压力"></a>压力</h6><p>正数往外，负数往内</p><p>可以直接拖拽材质球到布料上</p><p>摩擦力：比如做腰带会往下滑，可以增大摩擦力</p><p>B键点击缝纫线</p><p>属性</p><p>折叠角度越大越凹，越小越凸</p><p>模特属性</p><p>表面间距：衣服与模特之间的间距，0时完全贴合皮肤</p>]]></content>
+    
+    
+    <summary type="html">MD学习记录</summary>
+    
+    
+    
+    
+    <category term="Marvelous Designer" scheme="http://example.com/tags/Marvelous-Designer/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>实体化修改器</title>
+    <link href="http://example.com/2021/11/26/%E5%AE%9E%E4%BD%93%E5%8C%96%E4%BF%AE%E6%94%B9%E5%99%A8/"/>
+    <id>http://example.com/2021/11/26/%E5%AE%9E%E4%BD%93%E5%8C%96%E4%BF%AE%E6%94%B9%E5%99%A8/</id>
+    <published>2021-11-26T07:06:49.000Z</published>
+    <updated>2021-11-26T07:06:49.808Z</updated>
+    
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>蒙皮修改器</title>
@@ -347,44 +379,6 @@
     <updated>2021-11-22T07:30:57.092Z</updated>
     
     <content type="html"><![CDATA[<h1 id="实例化"><a href="#实例化" class="headerlink" title="实例化"></a>实例化</h1><p>在物体模式下shift+a，最下方集合实例，选择所需要实例化的集合，集合下所有的物体都会被看作集合的引用</p><p><img src="https://cdn.jsdelivr.net/gh/lafew/picgo_xyz@main//img/image-20211122145643181.png" alt="image-20211122145643181"></p><p>实例所使用的数据都是原生集合的数据，因此复制的时候，内存不会产生较大的波动，相比之下直接复制则要占用更多的内存。</p><p>实例化所使用的数据都基于原始物体，因此改变原始物体，实例化物体也会跟着一起改变</p><p>想要实例物体独立，就在物体模式下ctrl+a，选择实例独立化</p><p><img src="https://cdn.jsdelivr.net/gh/lafew/picgo_xyz@main//img/image-20211122150253954.png" alt="image-20211122150253954"></p><p>独立化完成后，空物体就不能直接控制，注意独立化后把空物体删掉。</p><p>独立后物体的数据实际上还处于一种关联的状态，会出现共用数据的一个标志</p><p><img src="https://cdn.jsdelivr.net/gh/lafew/picgo_xyz@main//img/image-20211122150533784.png" alt="image-20211122150533784"></p><p>如果数据也要独立</p><p>找到物体-关系-使其独立化-物体和数据和材质</p><p>按alt可以同时操作多个物体</p><p><img src="https://cdn.jsdelivr.net/gh/lafew/picgo_xyz@main//img/image-20211122150806469.png" alt="image-20211122150806469"></p><hr><p>如果要对实例物体进行大规模的散布的话，创建一个平面，调整好大小后，为平面添加一个阵列修改器</p><p>ctrl+p将实例物体与平面绑定父子级关系</p><p>找到当前阵列所在的物体，点开属性找到实例化进行开启，选择顶点或者面</p><hr><h2 id="关联物体转为本地"><a href="#关联物体转为本地" class="headerlink" title="关联物体转为本地"></a>关联物体转为本地</h2><p><img src="https://cdn.jsdelivr.net/gh/lafew/picgo_xyz@main//img/image-20211122151832046.png" alt="image-20211122151832046"></p><h2 id="直接创建实例面"><a href="#直接创建实例面" class="headerlink" title="直接创建实例面"></a>直接创建实例面</h2><p><img src="https://cdn.jsdelivr.net/gh/lafew/picgo_xyz@main//img/image-20211122152044998.png" alt="image-20211122152044998"></p><p>比较方便</p><p>✌✌✌</p>]]></content>
-    
-    
-    <summary type="html">blender学习记录</summary>
-    
-    
-    
-    
-    <category term="blender" scheme="http://example.com/tags/blender/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>阵列修改器与粒子系统</title>
-    <link href="http://example.com/2021/11/19/%E9%98%B5%E5%88%97%E4%BF%AE%E6%94%B9%E5%99%A8%E4%B8%8E%E7%B2%92%E5%AD%90%E7%B3%BB%E7%BB%9F/"/>
-    <id>http://example.com/2021/11/19/%E9%98%B5%E5%88%97%E4%BF%AE%E6%94%B9%E5%99%A8%E4%B8%8E%E7%B2%92%E5%AD%90%E7%B3%BB%E7%BB%9F/</id>
-    <published>2021-11-19T01:36:25.000Z</published>
-    <updated>2021-11-19T14:12:48.611Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="粒子系统"><a href="#粒子系统" class="headerlink" title="粒子系统"></a>粒子系统</h2><p>新建一个平面，为其添加粒子设置，选择毛发</p><p><img src="https://cdn.jsdelivr.net/gh/lafew/picgo_xyz@main//img/image-20211119162123559.png" alt="image-20211119162123559"></p><p>将毛发的数量改成4（符合平面顶点数量），然后将发射源改成顶点</p><p><img src="https://cdn.jsdelivr.net/gh/lafew/picgo_xyz@main//img/image-20211119162318737.png" alt="image-20211119162318737"></p><p>注意把顶点下面的随机顺序取消勾选</p><p>然后新建一个猴头，选中粒子系统所在的物体（平面），选择粒子设置中的渲染，渲染为从路径换成物体</p><p>再点开物体，实例物体选择猴头就行</p><p><img src="https://cdn.jsdelivr.net/gh/lafew/picgo_xyz@main//img/image-20211119162728773.png" alt="image-20211119162728773"></p><p><img src="https://cdn.jsdelivr.net/gh/lafew/picgo_xyz@main//img/image-20211119162905357.png" alt="image-20211119162905357"></p><p>猴头的朝向会与新建的不同，打开毛发的高级选项勾选旋转就行了</p><p><img src="https://cdn.jsdelivr.net/gh/lafew/picgo_xyz@main//img/image-20211119163026419.png" alt="image-20211119163026419"></p><p>物体下勾选全局坐标系就会以新建物体的坐标位置进行发射，物体旋转和物体缩放可以通过控制本体来实现副本的缩放与旋转</p><p><img src="https://cdn.jsdelivr.net/gh/lafew/picgo_xyz@main//img/image-20211119163150662.png" alt="image-20211119163150662"></p><h2 id="与阵列修改器结合"><a href="#与阵列修改器结合" class="headerlink" title="与阵列修改器结合"></a>与阵列修改器结合</h2><p>在修改器中要先对平面添加阵列修改器然后再添加粒子系统，注意要修改毛发数量，还要勾选使用修改器堆栈</p><p><img src="https://cdn.jsdelivr.net/gh/lafew/picgo_xyz@main//img/image-20211119163639278.png" alt="image-20211119163639278"></p><h2 id="物体独立"><a href="#物体独立" class="headerlink" title="物体独立"></a>物体独立</h2><p>在粒子设置下，点开小箭头，点击转换，就会使复制出来的物体进行独立，数据独立化跟之前的操作一样，参考上一篇即可</p>]]></content>
-    
-    
-    <summary type="html">blender学习记录</summary>
-    
-    
-    
-    
-    <category term="blender" scheme="http://example.com/tags/blender/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>阵列修改器与网格实例化</title>
-    <link href="http://example.com/2021/11/19/%E9%98%B5%E5%88%97%E4%BF%AE%E6%94%B9%E5%99%A8%E4%B8%8E%E7%BD%91%E6%A0%BC%E5%AE%9E%E4%BE%8B%E5%8C%96/"/>
-    <id>http://example.com/2021/11/19/%E9%98%B5%E5%88%97%E4%BF%AE%E6%94%B9%E5%99%A8%E4%B8%8E%E7%BD%91%E6%A0%BC%E5%AE%9E%E4%BE%8B%E5%8C%96/</id>
-    <published>2021-11-18T17:58:41.000Z</published>
-    <updated>2021-11-18T17:58:51.261Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="网格实例化"><a href="#网格实例化" class="headerlink" title="网格实例化"></a>网格实例化</h1><h2 id="举例"><a href="#举例" class="headerlink" title="举例"></a>举例</h2><p>新建一个<strong>平面</strong>和一个<strong>球体</strong></p><p>ctrl+p绑定父子级关系，平面作为父级</p><p>点击父级物体属性，找到实例化</p><p><img src="https://cdn.jsdelivr.net/gh/lafew/picgo_xyz@main//img/image-20211119011406296.png" alt="image-20211119011406296"></p><p>默认是没有效果的，如果点击顶点，球体就会按照平面的顶点进行排列</p><p><img src="https://cdn.jsdelivr.net/gh/lafew/picgo_xyz@main//img/image-20211119011601742.png" alt="image-20211119011601742"></p><p>点击面，球体就会按照父级的每一个面进行排列</p><p><img src="https://cdn.jsdelivr.net/gh/lafew/picgo_xyz@main//img/image-20211119011723346.png" alt="image-20211119011723346"></p><h2 id="显示实例"><a href="#显示实例" class="headerlink" title="显示实例"></a>显示实例</h2><p>勾选与否可以隐藏父级物体</p><h2 id="按照面尺寸缩放"><a href="#按照面尺寸缩放" class="headerlink" title="按照面尺寸缩放"></a>按照面尺寸缩放</h2><p>在实例化下面选择面，勾选按面尺寸缩放，通过调成面的缩放可以控制球体的大小</p><p>通过调整系数可以控制整体球体在面上的大小</p><hr><p>非网格物体也可以进行实例，比如灯光，</p><p>实例化后再通过阵列修改器进行复制</p><p><img src="https://cdn.jsdelivr.net/gh/lafew/picgo_xyz@main//img/image-20211119012818947.png" alt="image-20211119012818947"></p><hr><p>如果想要实例下的物体独立，则需要先选中父级物体然后ctrl+a，再选择实例独立化，这样每个物体就都可以单独调节了，实例独立化注意父级和保持层级</p><p><img src="https://cdn.jsdelivr.net/gh/lafew/picgo_xyz@main//img/image-20211119013441289.png" alt="image-20211119013441289"></p><p>需要注意的是，独立出来的灯光数据也是一样的，如果要单独调节有两种方式</p><p>第一种是直接点击创建副本</p><p>第二种是点击物体-关系-使其独立化-物体和数据，如下所示：</p><p><img src="https://cdn.jsdelivr.net/gh/lafew/picgo_xyz@main//img/image-20211119013954434.png" alt="image-20211119013954434"></p><hr><p>以上就是阵列修改器与网格实例化的内容了</p><p>🎉🎉🎉</p>]]></content>
     
     
     <summary type="html">blender学习记录</summary>
