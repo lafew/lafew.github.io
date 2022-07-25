@@ -4,6 +4,25 @@
   
     
     <entry>
+      <title>游大佛寺</title>
+      <link href="/2022/07/26/%E6%B8%B8%E6%AD%A3%E5%AE%9A%E5%A4%A7%E4%BD%9B%E5%AF%BA/"/>
+      <url>/2022/07/26/%E6%B8%B8%E6%AD%A3%E5%AE%9A%E5%A4%A7%E4%BD%9B%E5%AF%BA/</url>
+      
+        <content type="html"><![CDATA[<h2 id="纪2022年7月24日游正定大佛寺"><a href="#纪2022年7月24日游正定大佛寺" class="headerlink" title="纪2022年7月24日游正定大佛寺"></a>纪2022年7月24日游正定大佛寺</h2><p>工作之后，周末就成了珍贵的东西，一段时间以来，每逢周末都要熬个夜，第二天睡到大中午才起床，仿佛这样才不算“虚度”了时光，当惰性占据主导地位，也难免会产生一种罪恶感，我常常苦于无法完全沉浸于堕落，去享受它的美好，所以总是抱怨为何堕落常伴清醒。</p><p>为了堕落的高级一点，或者说以一种看似有意义的方式来虚度光阴，我决定将打游戏，刷手机换成穷游，近处即可。</p><p>难的这次有了想法之后没有像往常一样一拖再拖，由于工作上常常需要参考一些古建筑的照片，但难以找到比较细节的参考图片，很令人恼火，就借此机会拍了些古建筑的细节照片（随手一拍，没有技术，没有审美），放在这里也方便查看。</p><hr><h3 id="寺庙大门口的四大天王"><a href="#寺庙大门口的四大天王" class="headerlink" title="寺庙大门口的四大天王"></a>寺庙大门口的四大天王</h3><p><a href="https://cdn.jsdelivr.net/gh/lafew/picgo_xyz@main//img/IMG_20220724_150720.jpg">https://cdn.jsdelivr.net/gh/lafew/picgo_xyz@main//img/IMG_20220724_150720.jpg</a></p><p><a href="https://cdn.jsdelivr.net/gh/lafew/picgo_xyz@main//img/IMG_20220724_150724.jpg">https://cdn.jsdelivr.net/gh/lafew/picgo_xyz@main//img/IMG_20220724_150724.jpg</a></p><p><a href="https://cdn.jsdelivr.net/gh/lafew/picgo_xyz@main//img/IMG_20220724_150724.jpg">https://cdn.jsdelivr.net/gh/lafew/picgo_xyz@main//img/IMG_20220724_150724.jpg</a></p><p><a href="https://cdn.jsdelivr.net/gh/lafew/picgo_xyz@main//img/IMG_20220724_150742.jpg">https://cdn.jsdelivr.net/gh/lafew/picgo_xyz@main//img/IMG_20220724_150742.jpg</a></p><p><a href="https://cdn.jsdelivr.net/gh/lafew/picgo_xyz@main//img/IMG_20220724_150814.jpg">https://cdn.jsdelivr.net/gh/lafew/picgo_xyz@main//img/IMG_20220724_150814.jpg</a></p><p>四大天王像原塑毁于1966年，现存为1982年正定民间老艺人重塑之作。像高4.8米。四大天王的名称和形象为东方持国天王，名“多罗吒”，手持琵琶；南方增长天王，名“毗琉璃”<br>，手握宝剑；西方广目天王，名“毗留博叉”，手中缠绕一蛇🐍；北方多闻天王，名“毗沙门”，右手持宝伞，左手握神鼠。人们根据其手中法器赋予了风调雨顺的吉祥寓意，表达了百姓的美好愿望。</p><p>以前只知道叫，魔礼青，魔礼红，魔礼海和魔礼寿，哈哈，原来这四个是佛教的。</p><p>太晚了，先写到这儿吧，明天再写，慢慢来咯。</p><hr>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 旅行 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>MD技巧</title>
       <link href="/2022/06/19/MD%E6%8A%80%E5%B7%A7/"/>
       <url>/2022/06/19/MD%E6%8A%80%E5%B7%A7/</url>
@@ -499,25 +518,6 @@
         <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
       
       
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>大佛寺古建照片</title>
-      <link href="/2021/01/01/%E6%B8%B8%E6%AD%A3%E5%AE%9A%E5%A4%A7%E4%BD%9B%E5%AF%BA/"/>
-      <url>/2021/01/01/%E6%B8%B8%E6%AD%A3%E5%AE%9A%E5%A4%A7%E4%BD%9B%E5%AF%BA/</url>
-      
-        <content type="html"><![CDATA[<h2 id="纪2022年7月24日游正定大佛寺"><a href="#纪2022年7月24日游正定大佛寺" class="headerlink" title="纪2022年7月24日游正定大佛寺"></a>纪2022年7月24日游正定大佛寺</h2><p>工作之后，周末就成了珍贵的东西，一段时间以来，每逢周末都要熬个夜，第二天睡到大中午才起床，仿佛这样才不算“虚度”了时光，当惰性占据主导地位，也难免会产生一种罪恶感，我常常苦于无法完全沉浸于堕落，去享受它的美好，所以总是抱怨为何堕落常伴清醒。</p><p>为了堕落的高级一点，或者说以一种看似有意义的方式来虚度光阴，我决定将打游戏，刷手机换成穷游，近处即可。</p><p>难的这次有了想法之后没有像往常一样一拖再拖，由于工作上常常需要参考一些古建筑的照片，但难以找到比较细节的参考图片，很令人恼火，就借此机会拍了些古建筑的细节照片（随手一拍，没有技术，没有审美），放在这里也方便查看。</p><hr><h3 id="寺庙大门口的四大天王"><a href="#寺庙大门口的四大天王" class="headerlink" title="寺庙大门口的四大天王"></a>寺庙大门口的四大天王</h3><p><a href="https://cdn.jsdelivr.net/gh/lafew/picgo_xyz@main//img/IMG_20220724_150720.jpg">https://cdn.jsdelivr.net/gh/lafew/picgo_xyz@main//img/IMG_20220724_150720.jpg</a></p><p><a href="https://cdn.jsdelivr.net/gh/lafew/picgo_xyz@main//img/IMG_20220724_150724.jpg">https://cdn.jsdelivr.net/gh/lafew/picgo_xyz@main//img/IMG_20220724_150724.jpg</a></p><p><a href="https://cdn.jsdelivr.net/gh/lafew/picgo_xyz@main//img/IMG_20220724_150724.jpg">https://cdn.jsdelivr.net/gh/lafew/picgo_xyz@main//img/IMG_20220724_150724.jpg</a></p><p><a href="https://cdn.jsdelivr.net/gh/lafew/picgo_xyz@main//img/IMG_20220724_150742.jpg">https://cdn.jsdelivr.net/gh/lafew/picgo_xyz@main//img/IMG_20220724_150742.jpg</a></p><p><a href="https://cdn.jsdelivr.net/gh/lafew/picgo_xyz@main//img/IMG_20220724_150814.jpg">https://cdn.jsdelivr.net/gh/lafew/picgo_xyz@main//img/IMG_20220724_150814.jpg</a></p><p>四大天王像原塑毁于1966年，现存为1982年正定民间老艺人重塑之作。像高4.8米。四大天王的名称和形象为东方持国天王，名“多罗吒”，手持琵琶；南方增长天王，名“毗琉璃”<br>，手握宝剑；西方广目天王，名“毗留博叉”，手中缠绕一蛇🐍；北方多闻天王，名“毗沙门”，右手持宝伞，左手握神鼠。人们根据其手中法器赋予了风调雨顺的吉祥寓意，表达了百姓的美好愿望。</p><p>以前只知道叫，魔礼青，魔礼红，魔礼海和魔礼寿，哈哈，原来这四个是佛教的。</p><p>太晚了，先写到这儿吧，明天再写，慢慢来咯。</p><hr>]]></content>
-      
-      
-      
-        <tags>
-            
-            <tag> 旅游 </tag>
-            
-        </tags>
       
     </entry>
     
